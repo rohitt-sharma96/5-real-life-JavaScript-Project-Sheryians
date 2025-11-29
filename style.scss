@@ -14,53 +14,31 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: royalblue;
-
+    background-color: lightseagreen;
 }
 
-#card {
+#container {
     height: 400px;
-    width: 280px;
-    background-color: white;
-    border-radius: 10px;
-    padding: 30px;
-    text-align: center;
+    width: 350px;
+    background-color: #fff;
+    position: relative;
+
+
 
     img{
-        height: 60%;
+        height: 100%;
         width: 100%;
-        border-radius: 4px;
         object-fit: cover;
-        object-position: center;
-
     }
 
-    h1{
-        font-size: 25px;
-        margin: 10px 0;
-    }
-
-    h5{
-        font-size: 20px;
-        margin: 15px 0;
-        color: red;
-        margin-bottom: 20px;
-
-    }
-    #btn-container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-        
-        button{
-            color: white;
-            background-color: cornflowerblue;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 15px;
-            font-weight: 700;
-            cursor: pointer;
-        }
+    i{
+        color: #fff;
+        font-size: 70px;
+        position: absolute;
+        opacity: 0.8;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50% ) scale(0);
+        transition: transform ease 0.4s;
     }
 }
