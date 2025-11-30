@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "helvetica neue";
+  color: white;
 }
 
 html,
@@ -11,32 +12,23 @@ body {
   width: 100%;
 }
 
-body {
+.main {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: lightseagreen;
 }
-
-#container {
-  height: 400px;
-  width: 350px;
+.main .cursor {
+  height: 20px;
+  width: 20px;
   background-color: #fff;
-  position: relative;
-}
-#container img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-#container i {
-  color: #fff;
-  font-size: 70px;
+  border-radius: 50%;
   position: absolute;
-  opacity: 0.8;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  transition: transform ease 0.4s;
+  mix-blend-mode: difference;
+}
+.main h1 {
+  font-size: 9vw;
+  font-weight: 900;
 }/*# sourceMappingURL=style.css.map */
