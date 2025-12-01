@@ -15,20 +15,27 @@ body {
 .main {
   height: 100%;
   width: 100%;
-  background-color: #000;
+  background-color: #111;
+}
+.main .elem {
+  height: 140px;
+  width: 100%;
+  border-bottom: 3px solid #fff;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  position: relative;
 }
-.main .cursor {
-  height: 20px;
-  width: 20px;
-  background-color: #fff;
-  border-radius: 50%;
-  position: absolute;
+.main .elem h1 {
+  font-size: 6vw;
+  position: relative;
+  z-index: 9;
   mix-blend-mode: difference;
 }
-.main h1 {
-  font-size: 9vw;
-  font-weight: 900;
+.main .elem img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0;
 }/*# sourceMappingURL=style.css.map */
